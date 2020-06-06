@@ -20,11 +20,7 @@ mongoose.connect(
   }
 );
 
-
-app.use(require("./routes/api"));
-
-
-
+require("./routes/api")(app);
 
 // Define API routes here
 

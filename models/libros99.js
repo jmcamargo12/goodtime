@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const Schema = mong9.Schema;
+const Schema = mongoose.Schema;
 
 const lir = new Schema({
   title: {

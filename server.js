@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
-const mong9 = require("moongose");
+const mongoose = require("mongoose");
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -19,6 +19,12 @@ mongoose.connect(
     useFindAndModify: false,
   }
 );
+
+
+app.use(require("./routes/api"));
+
+
+
 
 // Define API routes here
 

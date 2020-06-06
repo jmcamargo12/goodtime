@@ -1,4 +1,4 @@
-const mong9 = require("mongoose");
+const mongoose = require("mongoose");
 const Schema = mong9.Schema;
 
 const lir = new Schema({
